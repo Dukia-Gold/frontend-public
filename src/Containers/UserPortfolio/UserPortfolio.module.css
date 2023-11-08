@@ -1,0 +1,8 @@
+.container {
+  height: 100%;
+  padding: 4rem 56px;
+}
+
+.container > p {
+  text-align: center;
+}

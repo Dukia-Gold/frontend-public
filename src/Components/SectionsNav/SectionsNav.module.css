@@ -1,0 +1,97 @@
+.container {
+  width: 100%;
+  margin: 1em 0;
+  background: #fcfcfc;
+  z-index: 4;
+  position: sticky;
+  top: 10vh;
+}
+
+.listNav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: 3rem;
+  border-bottom: 2px solid var(--purple2);
+}
+
+.listNav::-webkit-scrollbar {
+  display: none;
+}
+
+.div {
+  text-align: center;
+  padding: 0.5em;
+  color: #1e1e1e;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  color: var(--grey);
+  text-align: center;
+
+  font-family: Archivo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.div > span {
+  cursor: pointer;
+}
+
+.activeDiv {
+  border-bottom: 2px solid rgb(28 37 78 / 1);
+  text-align: center;
+  padding: 0.5em;
+  color: #1e1e1e;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  color: var(--grey);
+  text-align: center;
+
+  font-family: Archivo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  animation: borderEffect 0.3s ease-in-out;
+}
+
+@keyframes borderEffect {
+  0% {
+    border-bottom: 2px solid #f2f3f8;
+  }
+
+  100% {
+    border-bottom: 2px solid #2855ae;
+  }
+}
+
+.activeDiv > span {
+  cursor: pointer;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: static;
+  }
+
+  .div {
+    flex-basis: 33.3%;
+  }
+
+  .activeDiv {
+    flex-basis: 33.3%;
+  }
+}

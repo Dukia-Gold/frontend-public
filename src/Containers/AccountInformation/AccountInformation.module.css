@@ -1,0 +1,155 @@
+.container {
+  height: 100%;
+  padding: 3rem 56px;
+}
+
+.bodySection > h4:first-child {
+  margin: 1rem 0 1rem 0;
+}
+
+.bodySection > h4 {
+  color: #1c254e;
+  font-family: Quasimoda;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 2rem 0 1rem 0;
+}
+
+.nameSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.nameSection > div:nth-child(2) > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #384d6c;
+  font-family: Quasimoda;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bodySection {
+  padding: 1rem 0;
+}
+
+.nameSection > div:nth-child(2) > p:last-child {
+  color: #6b7280;
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.infoFlex {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.infoFlex > div {
+  flex: 1;
+}
+
+.info {
+  width: 100%;
+}
+
+.info > label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: Quasimoda;
+  font-weight: 400;
+}
+
+.info > input {
+  min-height: 40px;
+  border: 0.02rem solid #daaa38;
+  font-size: 14px;
+  color: rgb(0 0 0);
+  border-radius: 0.375rem;
+  width: 100%;
+  height: 2rem;
+  display: block;
+  outline: none;
+  padding: 0 1rem;
+  margin-bottom: 0.8rem;
+  font-family: Quasimoda;
+}
+
+.verifiedTag {
+  padding: 0 0.5rem;
+  font-size: 14px;
+  background-color: rgb(89, 135, 89);
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.changePasswordText {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: Quasimoda;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+.buttonSection {
+  margin: auto;
+  width: 200px;
+  margin: 1rem 0;
+}
+
+.contactUs {
+  color: #384d6c;
+  font-family: Quasimoda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 2rem;
+}
+
+.contactUs > a {
+  color: #daaa38;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+  }
+
+  .infoFlex {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .infoFlex > div {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+
+  .infoFlex {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .infoFlex > div {
+    flex-basis: 100%;
+  }
+}

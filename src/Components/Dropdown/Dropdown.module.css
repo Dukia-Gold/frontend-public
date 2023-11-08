@@ -1,0 +1,48 @@
+.container {
+  border-bottom: 1px solid #262626;
+  width: 100%;
+  padding: 24px 32px;
+  user-select: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.header > p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: #243776;
+}
+
+.header > svg {
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.content {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  color: #262626;
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px 16px;
+  }
+
+  .header > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

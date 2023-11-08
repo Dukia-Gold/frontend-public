@@ -1,0 +1,454 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: 100%;
+  padding: 0 56px;
+  position: relative;
+  user-select: none;
+}
+
+.title {
+  color: #000;
+  font-family: Quasimoda;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.notifocationsContainer {
+  border-radius: 0.5rem;
+  background: rgb(255 255 255);
+  position: absolute;
+  right: 160px;
+  top: 100%;
+  width: 238px;
+  min-height: 278px;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  animation: appear 0.3s ease-in-out;
+  font-size: 0.8rem;
+  z-index: 2;
+}
+
+.notifocationsContainer > p:nth-child(1) {
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0.5rem;
+}
+
+.notoficationBody {
+  font-weight: 400;
+  font-family: Quasimoda;
+  box-sizing: border-box;
+  padding: 0 0.5rem;
+}
+
+.seeMore {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  font-family: Quasimoda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0.5rem;
+  border-top: 1px solid #e1e5f4;
+  cursor: pointer;
+}
+
+.notifications {
+  margin-left: auto;
+}
+
+.notifications > svg {
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.profile > p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile:hover {
+  background: #e1e5f4;
+}
+
+.sideMenuOpener {
+  display: none;
+}
+
+.profileDropdown {
+  border-radius: 0.5rem;
+  background: rgb(255 255 255);
+  position: absolute;
+  right: 0;
+  top: 120%;
+  width: 288px;
+  max-height: 338px;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  animation: appear 0.3s ease-in-out;
+  font-size: 1rem;
+  padding: 0.5rem;
+  z-index: 2;
+}
+
+.profileDropdown > div:first-child {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.profileDropdown > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: column;
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.profileDropDownLink {
+  text-decoration: underline;
+}
+
+.profileDropdown > div > img {
+  width: 120px;
+  height: 120px;
+}
+
+.kycNotificstion {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0.2rem 0;
+  background: #fcedec;
+  color: red;
+  text-align: center;
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  z-index: 1;
+}
+
+.kycNotificstion > a {
+  color: #dbaa37;
+  text-decoration: none;
+}
+
+.sideNav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  overflow: hidden;
+  width: 0%;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.navBox {
+  margin-top: 2rem;
+}
+
+.sideNavInner {
+  padding: 10px 10px;
+}
+.buttonContainer {
+  padding: 10px 20px;
+}
+
+.sideNavInner > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.sideNavInner > .header > img {
+  width: 45px;
+  height: 35px;
+}
+
+.route,
+.routeInner {
+  display: flex;
+  align-items: center;
+  padding: 10px 32px;
+  gap: 12px;
+  font-family: Quasimoda;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  color: #1c254e;
+}
+
+.route > span:nth-child(1) {
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  font-weight: 600;
+  color: #32428b;
+}
+
+.livePriceUpdate {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  padding: 0 4rem;
+  background: rgba(16, 21, 45, 0.8);
+  color: #fff;
+}
+
+.livePriceUpdate > div {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1rem;
+  font-size: 0.75rem;
+}
+
+.livePriceUpdate > div:nth-child(1) > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.livePriceUpdate
+  > div:nth-child(1)
+  > span:not(
+    .livePriceUpdate > div > span:nth-child(2),
+    .livePriceUpdate > div > span:nth-child(1),
+    .livePriceUpdate > div > span:nth-child(5)
+  ),
+.livePriceUpdate
+  > div:nth-child(2)
+  > span:not(
+    .livePriceUpdate > div > span:nth-child(1),
+    .livePriceUpdate > div > span:nth-child(3)
+  ) {
+  color: #daaa38;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+.livePriceDetail {
+  position: absolute;
+  width: 400px;
+  background: rgba(16, 21, 45, 0.8);
+  top: calc(10vh - 75px);
+  left: 0;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  border-radius: 5px;
+  color: #daaa38;
+}
+
+.routeNew > .optionsPopupNew {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-left: 2rem;
+}
+
+.optionsPopupNew > a {
+  display: block;
+  color: #1c254e;
+  font-weight: 400;
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 0.5rem 0;
+  color: #1c254e;
+}
+
+.cart,
+.mobileCart {
+  position: relative;
+}
+
+.cartLengthIndicator {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -15px;
+  top: -15px;
+  border-radius: 50%;
+  background: #daaa38;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  text-decoration: none;
+}
+
+.cartDropdownContainer {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  animation: appear 0.3s ease-in-out;
+  z-index: 3;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+  }
+  .livePriceUpdate {
+    padding: 10px 10px;
+    flex-direction: column;
+    height: 60px;
+    bottom: -7vh;
+  }
+  .cart {
+    display: none;
+  }
+
+  .notifications {
+    display: none;
+  }
+
+  .profile {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .profile > p {
+    display: none;
+    margin-left: auto;
+  }
+
+  .sideMenuOpener {
+    display: block;
+  }
+
+  .profileDropdown {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+  }
+
+  .notifications {
+    display: none;
+  }
+
+  .profile {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .profile > p {
+    display: none;
+    margin-left: auto;
+  }
+
+  .livePriceUpdate {
+    padding: 10px 20px;
+    flex-direction: column;
+    height: 60px;
+    bottom: -7vh;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  .sideMenuOpener {
+    display: block;
+  }
+
+  .profileDropdown {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+}

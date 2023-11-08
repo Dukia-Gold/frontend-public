@@ -1,0 +1,168 @@
+.container {
+  padding: 5rem;
+  background-color: #2a303c;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header > hr {
+  border: 0.15rem solid rgb(212 164 24);
+  width: 3.5rem;
+  margin: 2rem 0;
+}
+
+.header > h4 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-family: Futura;
+  color: rgb(255 255 255);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header > p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(255 255 255);
+  font-family: Quasimoda;
+  font-weight: 300;
+  width: 35%;
+  text-align: center;
+}
+
+.body {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.body > div {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  background: #c9ced3;
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.body > div:hover {
+  transform: scale(1.05);
+}
+
+.body > div > div > svg {
+  width: 78px;
+  height: 78px;
+  color: #334254;
+}
+
+.body > div > div:nth-child(2) > h6 {
+  color: #1c254e;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-family: Futura;
+}
+
+.body > div > div:nth-child(2) > p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: Quasimoda, Helvetica;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header > hr {
+    margin: 1rem 0;
+  }
+
+  .header > h4 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+
+  .header > p {
+    width: 100%;
+    line-height: 24px;
+    font-size: 1rem;
+  }
+
+  .body {
+    flex-direction: column;
+  }
+
+  .body > div > div > svg {
+    width: 68px;
+    height: 68px;
+    color: #334254;
+  }
+
+  .body > div {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header > hr {
+    margin: 1rem 0;
+  }
+
+  .header > h4 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+
+  .header > p {
+    width: 100%;
+    line-height: 24px;
+    font-size: 1rem;
+  }
+
+  .body {
+    flex-direction: column;
+  }
+
+  .body > div > div > svg {
+    width: 68px;
+    height: 68px;
+    color: #334254;
+  }
+
+  .body > div {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+}

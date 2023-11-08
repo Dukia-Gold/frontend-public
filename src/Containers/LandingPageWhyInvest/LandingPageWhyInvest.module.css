@@ -1,0 +1,197 @@
+.container {
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header > hr {
+  border: 0.15rem solid rgb(212 164 24);
+  width: 3.5rem;
+  margin: 1rem 0;
+}
+
+.header > h4 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-family: Futura;
+  color: #1c254e;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header > h4 > span {
+  color: #daaa38;
+}
+
+.bodyContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.whyInvest {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 19%;
+  height: 400px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.whyInvest > .imageSection {
+  width: 70px;
+  height: 70px;
+}
+
+.whyInvest > .imageSection > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.whyInvest > .textSection {
+  width: 100%;
+}
+
+.whyInvest > .textSection > h5 {
+  font-size: 1.5rem;
+  line-height: 140%;
+  font-weight: 700;
+  color: #1c254e;
+  margin: 1rem 0;
+}
+
+.whyInvest > .textSection > p {
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 300;
+  color: #040404;
+  font-size: 14px;
+}
+
+.buttonSection {
+  width: 200px;
+  margin: 2rem auto;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header > h4 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+
+  .header > hr {
+    margin: 0.5rem 0;
+  }
+
+  .bodyContainer {
+    flex-direction: column;
+  }
+
+  .whyInvest {
+    flex-direction: column;
+  }
+
+  .whyInvest:nth-child(even) > .imageSection {
+    order: 0;
+  }
+
+  .whyInvest > .imageSection {
+    width: 100%;
+    height: auto;
+  }
+
+  .whyInvest > .textSection {
+    width: 100%;
+    text-align: center;
+  }
+
+  .whyInvest > .textSection > h4 {
+    letter-spacing: 0.7px;
+    line-height: 32.6px;
+    font-size: 1.7rem;
+  }
+
+  .whyInvest > .textSection > h5 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+
+  .whyInvest > .textSection > p {
+    line-height: 24px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header > h4 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+
+  .header > hr {
+    margin: 0.5rem 0;
+  }
+
+  .bodyContainer {
+    flex-direction: column;
+  }
+
+  .whyInvest {
+    flex-direction: column;
+  }
+
+  .whyInvest:nth-child(even) > .imageSection {
+    order: 0;
+  }
+
+  .whyInvest > .imageSection {
+    width: 100%;
+    height: auto;
+  }
+
+  .whyInvest > .textSection {
+    width: 100%;
+    text-align: center;
+  }
+
+  .whyInvest > .textSection > h4 {
+    letter-spacing: 0.7px;
+    line-height: 32.6px;
+    font-size: 1.7rem;
+  }
+
+  .whyInvest > .textSection > h5 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+
+  .whyInvest > .textSection > p {
+    line-height: 24px;
+    font-size: 1rem;
+  }
+}

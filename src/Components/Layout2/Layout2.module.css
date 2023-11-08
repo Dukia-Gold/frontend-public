@@ -1,0 +1,16 @@
+.container {
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.header {
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.body {
+  min-height: 90vh;
+  padding-top: 30px;
+}

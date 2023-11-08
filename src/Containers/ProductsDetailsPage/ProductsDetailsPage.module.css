@@ -1,0 +1,216 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  padding: 3rem 5rem;
+}
+
+.containerMain {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.noPriceNote {
+  color: #daaa38;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 0.75rem;
+}
+
+.noPriceNote > a {
+  color: #daaa38;
+}
+
+.loadingContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.imageSection {
+  width: 60%;
+  text-align: center;
+}
+
+.imageSection > img {
+  width: 500px;
+  max-height: 500px;
+  object-fit: cover;
+  animation: appear 0.3s ease-in-out;
+}
+
+.textSection {
+  width: 40%;
+}
+
+.textSection > p:not(.textSection > p:nth-child(1), .description) {
+  margin: 0.5em 0;
+}
+
+.textSection > p:nth-child(1) {
+  color: #1e1e1e;
+  font-family: Futura;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.textSection > p:nth-child(2) {
+  color: #686363;
+  font-family: Quasimoda;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.textSection > p {
+  /* color: #686363; */
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.description {
+  color: #686363;
+  font-family: Quasimoda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 3rem 0;
+  width: 100%;
+}
+
+.quantity {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.quantity > p {
+  flex-basis: 100%;
+  color: #1e1e1e;
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.8rem;
+}
+
+.quantity > button {
+  border: none;
+  box-sizing: border-box;
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 400;
+  background-color: rgb(255 255 255 / var(1));
+  padding: 0.5rem 1.75rem;
+  color: rgb(28 37 78 / 1);
+
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.quantity > input {
+  border: solid 1px #10152d;
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+  padding: 0.35rem 0.575rem;
+  box-sizing: border-box;
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  outline: none;
+  width: 60px;
+  text-align: center;
+}
+
+.buttonContainer {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.navSection {
+  margin: 3rem 0 1rem 0;
+}
+
+.productDescriptionContainer {
+  color: #1e1e1e;
+  font-family: Quasimoda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.productDescriptionContainer > div {
+  text-align: center;
+}
+
+.imagePreview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.activeImage {
+  border: 2px solid #daaa38;
+}
+
+.imagePreview > img {
+  width: 92px;
+  height: 92px;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 10px 20px;
+  }
+
+  .containerMain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .containerMain > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 10px 20px;
+  }
+
+  .imageSection > img {
+    width: 100%;
+  }
+
+  .containerMain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .containerMain > div {
+    width: 100%;
+  }
+}

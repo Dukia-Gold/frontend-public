@@ -1,0 +1,118 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  padding: 0.75rem;
+  background-color: rgb(255 255 255);
+  border-radius: 0.75rem;
+  width: 310px;
+  transition: all 0.3s ease-in-out;
+  min-height: 450px;
+}
+
+.noPriceNote {
+  color: #daaa38;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 0.75rem;
+}
+
+.noPriceNote > a {
+  color: #daaa38;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.container > .imageSection {
+  height: 286px;
+  width: 286px;
+  position: relative;
+  animation: appear 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container > .imageSection > img {
+  height: 100%;
+  width: 100%;
+  animation: appear 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container > .textSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container > .textSection > div:nth-child(3) {
+  flex-basis: 100%;
+}
+
+.container > p:nth-child(2) {
+  color: rgb(51 65 85);
+  font-family: Futura;
+  font-weight: 500;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-family: Quasimoda;
+  font-weight: 700;
+  color: rgb(28 37 78);
+}
+
+.buttonInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.buttonInner > svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  width: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  background-color: #fff;
+
+  bottom: 30px;
+  left: 10px;
+}
+
+.rating > svg {
+  height: 20px;
+  width: 20px;
+  color: rgb(227 160 8);
+}
+
+.rating > span {
+  display: block;
+  color: rgb(148 163 184);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}

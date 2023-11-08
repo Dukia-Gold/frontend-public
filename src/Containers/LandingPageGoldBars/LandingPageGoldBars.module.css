@@ -1,0 +1,72 @@
+.container {
+  padding: 5rem;
+  gap: 3rem;
+  background-color: #111827;
+}
+
+.containerCoins {
+  padding: 5rem;
+  gap: 3rem;
+  background-color: #f3f4f6;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headerAlt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header > hr {
+  border: 0.15rem solid rgb(212 164 24);
+  width: 3.5rem;
+  margin: 1rem 0;
+}
+
+.headerAlt > hr {
+  border: 0.15rem solid rgb(212 164 24);
+  width: 3.5rem;
+  margin: 1rem 0;
+}
+
+.header > h4 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-family: Futura;
+  color: rgb(255 255 255);
+  text-align: center;
+}
+
+.headerAlt > h4 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-family: Futura;
+  color: #1c254e;
+  text-align: center;
+}
+
+.productsSection {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  justify-content: center;
+}
+
+.products {
+  flex-basis: 25%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

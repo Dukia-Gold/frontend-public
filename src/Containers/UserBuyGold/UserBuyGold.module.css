@@ -1,0 +1,14 @@
+.container > h4 {
+  color: var(--neutral-900, #060709);
+  font-family: Futura;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.container {
+  padding: 3rem 0;
+}

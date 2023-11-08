@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  padding: 3rem 56px;
+}
+
+.container > div:nth-child(1) {
+  width: 200px;
+  height: 200px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1c254e;
+}
+
+.container > div:nth-child(2) {
+  text-align: center;
+}
+
+.container > div:nth-child(2) > h4 {
+  font-family: Quasimoda;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.container > div:nth-child(2) > p:nth-child(2) {
+  font-family: Quasimoda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.container > div:nth-child(2) > p:nth-child(3) {
+  font-family: Quasimoda;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.container > div:nth-child(2) > a:not(.alt) {
+  display: block;
+  font-family: Quasimoda;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #dbaa37;
+  text-decoration: none;
+}
+
+.alt {
+  display: block;
+  font-family: Quasimoda;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #1c254e;
+
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    gap: 1rem;
+    padding: 6rem 20px;
+  }
+
+  .container > div:nth-child(1) {
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+  }
+
+  .container > div:nth-child(2) > h4 {
+    font-size: 24px;
+  }
+
+  .container > div:nth-child(2) > p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .container > div:nth-child(2) > p:nth-child(3) {
+    font-size: 14px;
+  }
+
+  .container > div:nth-child(2) > a:not(a:nth-child(6)) {
+    font-size: 18px;
+  }
+
+  .alt {
+    font-size: 12px;
+
+    margin-top: 1.5rem;
+  }
+}

@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Quasimoda";
+  src: url("./Assets/Fonts/Quasimoda v3.000/Quasimoda Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Quasimoda";
+  src: url("./Assets/Fonts/Quasimoda v3.000/Quasimoda SemiBold.otf");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Quasimoda";
+  src: url("./Assets/Fonts/Quasimoda v3.000/Quasimoda Bold.otf");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Quasimoda";
+  src: url("./Assets/Fonts/Quasimoda v3.000/Quasimoda Black.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("./Assets/Fonts//futura sv/Futura\ Bold.ttf");
+  font-style: normal;
+  font-weight: 800;
+}
+
+body {
+  margin: 0;
+  font-family: "Futura", "Quasimoda", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,74 @@
+.container {
+  padding: 3rem 5rem;
+  min-height: 90vh;
+}
+
+.bodySection {
+  display: flex;
+  align-items: stretch;
+  padding: 2rem 0;
+  height: 100%;
+}
+
+.navSection {
+  width: 300px;
+  color: #000;
+  height: 100%;
+}
+
+.navSection > a {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-family: Quasimoda;
+  margin: 1em 0;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.inactiveRoute {
+  color: #000;
+  font-weight: 400;
+}
+
+.activeRoute {
+  color: #daaa38;
+  font-weight: 600;
+}
+
+.body {
+  flex: 1;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+  }
+
+  .bodySection {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .bodySection > div {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+
+  .bodySection {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .bodySection > div {
+    flex: 1;
+  }
+}

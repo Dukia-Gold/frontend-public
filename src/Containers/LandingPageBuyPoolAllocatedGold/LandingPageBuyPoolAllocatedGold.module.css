@@ -1,0 +1,217 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5rem;
+  gap: 3rem;
+  background-color: #111827;
+}
+
+.container > div {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container > div:nth-child(1) {
+  color: white;
+}
+
+.container > div:nth-child(1) > iframe {
+  height: 100%;
+  border: 2px solid red;
+}
+
+.container > div:nth-child(1) > a {
+  color: white;
+}
+
+.container > div:nth-child(1) > h5 {
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: Futura;
+  color: rgb(255 255 255);
+  margin-bottom: 3rem;
+}
+.container > div:nth-child(1) > p:nth-child(2) {
+  font-size: 1.5rem;
+  line-height: 140%;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  font-family: Quasimoda;
+  color: rgb(156 163 175);
+  text-align: center;
+  margin-bottom: 4rem;
+  width: 70%;
+}
+
+.poolAllocatedForm {
+  padding: 1.5rem;
+  background-color: rgb(255 255 255);
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.poolAllocatedForm > .header {
+  color: rgb(51 65 85);
+  font-weight: 800;
+  font-family: Futura;
+  margin-bottom: 2rem;
+}
+
+.poolAllocatedForm > input,
+.priceInput > input {
+  min-height: 40px;
+  border: 0.02rem solid #daaa38;
+  color: rgb(0 0 0);
+  border-radius: 0.375rem;
+  width: 100%;
+  height: 2rem;
+  display: block;
+  outline: none;
+  padding: 0 1rem;
+}
+
+.priceInput {
+  position: relative;
+}
+
+.priceInput > input {
+  text-indent: 1rem;
+}
+
+.priceInput > span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 8px;
+  margin: auto;
+  font-size: 0.9rem;
+  color: rgb(75 85 99);
+  line-height: 1.5rem;
+  font-family: Quasimoda;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricesLabels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.pricesLabels > label {
+  font-size: 0.67rem;
+  color: rgb(75 85 99);
+  line-height: 1.5rem;
+  font-family: Quasimoda;
+  font-weight: 300;
+  display: block;
+}
+
+.pricesLabels > span {
+  font-size: 0.8rem;
+  color: rgb(75 85 99);
+  line-height: 1.5rem;
+  font-family: Quasimoda;
+  font-weight: 300;
+  display: block;
+  color: red;
+}
+
+.or {
+  margin-bottom: 24px;
+  width: 33px;
+  padding: 3px;
+  line-height: 10px;
+  top: 0px;
+  text-align: center;
+  border-radius: 100%;
+  height: 33px;
+  color: rgb(255 255 255);
+  font-size: 0.875rem;
+  background-color: #10152d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0.5rem auto 1rem auto;
+}
+
+.buttonSection {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.buttonInner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.buttonInner > svg {
+  width: 12px;
+  height: 12px;
+}
+
+.errorContainer {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .container > div {
+    flex-basis: 540px;
+    width: 100%;
+  }
+
+  .container > div:nth-child(2) > h5 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+  .container > div:nth-child(2) > p:nth-child(2) {
+    line-height: 24px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .container > div {
+    flex-basis: 540px;
+    width: 100%;
+  }
+
+  .container > div:nth-child(1) > h5 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+  .container > div:nth-child(1) > p:nth-child(2) {
+    line-height: 24px;
+    font-size: 1rem;
+  }
+}

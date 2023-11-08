@@ -1,0 +1,69 @@
+.container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container > i {
+  font-size: 3rem;
+  color: green;
+}
+
+.container > h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-family: Futura;
+  color: #1c254e;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.container > p {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: Quasimoda;
+  font-weight: 300;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container > p > a {
+  color: #daaa38;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    min-height: 80vh;
+  }
+
+  .container > h4 {
+    font-size: 1rem;
+    line-height: 140%;
+  }
+
+  .container > p {
+    font-size: 0.8rem;
+    line-height: 140%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    min-height: 80vh;
+  }
+
+  .container > h4 {
+    font-size: 1rem;
+    line-height: 140%;
+  }
+
+  .container > p {
+    font-size: 0.8rem;
+    line-height: 140%;
+  }
+}

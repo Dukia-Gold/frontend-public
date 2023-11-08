@@ -1,0 +1,119 @@
+.container {
+  padding: 5rem;
+  background-color: #f3f4f6;
+  box-sizing: border-box;
+  min-height: 90vh;
+}
+
+.bodySection {
+  margin: 3rem 0;
+}
+
+.dukiaInfo > h4 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: Futura;
+  margin: 1em 0;
+}
+
+.dukiaInfo > p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-family: Quasimoda;
+}
+
+.meetOurLeadership {
+  margin-top: 7rem;
+}
+
+.leaderdhipBodySection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+.leadershipInfo {
+  flex-basis: 45%;
+  align-self: center;
+  text-align: center;
+}
+
+.imageSection > img {
+  max-width: 400px;
+  max-height: 400px;
+
+  justify-items: center;
+  align-self: center;
+}
+
+.imageSection > h5 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: Futura;
+}
+
+.imageSection > p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-family: Quasimoda;
+  margin: 0.5em 0;
+}
+
+.imageSection > p:nth-child(4) {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.atDukia {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-family: Quasimoda;
+  margin: 3rem 0;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+  }
+
+  .imageSection > p:nth-child(4) {
+    width: auto;
+    margin: 2rem auto;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+
+  .imageSection > p:nth-child(4) {
+    width: auto;
+    margin: 2rem auto;
+    box-sizing: border-box;
+  }
+
+  .imageSection > img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .leaderdhipBodySection {
+    gap: 2rem;
+    margin-top: 0rem;
+  }
+}

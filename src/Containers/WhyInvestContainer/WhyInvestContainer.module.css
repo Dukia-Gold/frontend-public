@@ -1,0 +1,30 @@
+.container {
+  padding: 5rem;
+  background-color: #f3f4f6;
+  box-sizing: border-box;
+  min-height: 90vh;
+}
+
+.whyInvestContainer {
+  margin: 3rem 0;
+}
+
+.whyInvestContainer > li {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-family: Quasimoda;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+}

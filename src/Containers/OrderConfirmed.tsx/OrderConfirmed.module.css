@@ -1,0 +1,85 @@
+.inputSection,
+.bankDetailsSection {
+  margin-bottom: 1rem;
+}
+
+.check {
+  border: 3px solid green;
+  margin: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  color: green;
+}
+
+.loadingCOntainer {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputSection > span:nth-child(1),
+.bankDetailsSection > span:nth-child(1) {
+  font-size: 1.2rem;
+  line-height: 1rem;
+  font-family: Quasimoda;
+  font-weight: 600;
+  color: #1c254e;
+  margin-bottom: 1rem;
+}
+
+.inputSection > span:nth-child(2),
+.bankDetailsSection > span:nth-child(2) {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: Quasimoda;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.footerSection {
+  margin: 2rem 0;
+}
+
+.footerSection > p {
+  font-size: 1rem;
+  line-height: 140%;
+  font-family: Quasimoda;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.bankDetailsSection > span:nth-child(2) > a {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: Quasimoda;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.phones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.buttonSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.buttonSection > div {
+  flex: 1;
+}

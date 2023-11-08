@@ -1,0 +1,212 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 5rem 56px;
+}
+
+.cartInfo {
+  width: 60%;
+}
+
+.header > h4 {
+  color: var(--neutral-900, #060709);
+  font-family: Quasimoda;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.header > span {
+  color: var(--neutral-200, #9d9ea2);
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #999999;
+}
+
+.cartItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--neutral-50, #999999);
+}
+
+.imageSection {
+  width: 40px;
+  height: 40px;
+}
+
+.imageSection > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textSection {
+  flex: 1;
+}
+
+.textSection > div,
+.checkoutSection > div:not(.inputSection, .buttonContainer) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.textSection > div > span,
+.checkoutSection > div > span {
+  display: block;
+}
+
+.textSection > div > span:nth-child(1),
+.checkoutSection > div > span:nth-child(1) {
+  display: block;
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  width: 80%;
+}
+
+.textSection > div > span:nth-child(2),
+.checkoutSection > div > span:nth-child(2) {
+  color: var(--neutral-900, #060709);
+  font-family: Quasimoda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  white-space: nowrap;
+}
+
+.checkoutSection {
+  flex: 1;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #999999;
+}
+
+.checkoutSection > a {
+  color: var(--neutral-500, #1c254e);
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-decoration-line: underline;
+  margin: 3rem 0;
+  display: block;
+}
+
+.inputSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-family: Quasimoda;
+  font-style: normal;
+  line-height: 21px;
+  margin-bottom: 1rem;
+}
+
+.inputSection:nth-child(5) {
+  margin-top: 2rem;
+}
+
+.inputSection > input {
+  margin-top: 0.5rem;
+}
+
+.inputSection > label > span:nth-child(1) {
+  font-weight: 600;
+  display: block;
+  font-size: 14px;
+}
+
+.inputSection > label > span:nth-child(2) {
+  font-weight: 400;
+  display: block;
+  font-size: 14px;
+  margin: 0.2em 0;
+}
+
+.buttonContainer {
+  margin-top: 2rem;
+}
+
+.modalContainer {
+  padding: 3rem 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalInnerContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.modalInnerContainer > i {
+  font-size: 4rem;
+  color: #32428b;
+  margin: 2rem auto;
+}
+
+.modalInnerContainer > h4 {
+  color: #1c254e;
+  font-family: Quasimoda;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0.5rem 0;
+}
+
+.buttonSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.buttonSection > div {
+  flex: 1;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 40px 20px;
+  }
+
+  .container > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 40px 20px;
+  }
+
+  .container > div {
+    width: 100%;
+  }
+}

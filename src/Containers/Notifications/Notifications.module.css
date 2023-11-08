@@ -1,0 +1,35 @@
+.container {
+  padding: 3rem 56px;
+}
+
+.notification {
+  margin: 1rem 0;
+}
+
+.notification > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notification > div p:nth-child(1) {
+  color: #000;
+  font-family: Quasimoda;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.notification > div p:nth-child(2) {
+  color: #adadad;
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.noNotifications {
+  text-align: center;
+}

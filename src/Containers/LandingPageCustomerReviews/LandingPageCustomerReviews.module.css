@@ -1,0 +1,137 @@
+.container {
+  box-sizing: border-box;
+  padding: 5rem 0 0 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header > hr {
+  border: 0.15rem solid rgb(212 164 24);
+  width: 3.5rem;
+  margin: 1rem 0;
+}
+
+.header > h4 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-family: Futura;
+  color: #1c254e;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.reviewBody {
+  padding: 0 5rem;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 5rem 0;
+}
+
+.review {
+  padding: 1.5rem;
+  background: #fff;
+  flex-basis: 30%;
+  border-radius: 0.5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+}
+
+.review > h4 {
+  color: #1c254e;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.review > p:nth-child(2) {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 300;
+  color: #cacfd7;
+}
+
+.review > p:nth-child(3) {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 800;
+  font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  color: rgb(30 66 159);
+}
+
+.consultation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 2rem 0;
+  background-color: #0f162c;
+  text-align: center;
+}
+
+.consultation > p {
+  color: rgb(255 255 255);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .header > h4 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+
+  .header > hr {
+    margin: 0.5rem 0;
+  }
+
+  .reviewBody {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+  }
+
+  .review {
+    flex-basis: 100%;
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header > h4 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+
+  .header > hr {
+    margin: 0.5rem 0;
+  }
+
+  .reviewBody {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+  }
+
+  .review {
+    flex-basis: 100%;
+    text-align: center;
+    flex-basis: 100%;
+  }
+}

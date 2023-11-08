@@ -1,0 +1,102 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 100%;
+  background: #fdfdff;
+}
+
+.logoSection {
+  text-align: center;
+  width: 75px;
+  height: 65px;
+  animation: appear 0.3s ease-in-out;
+}
+
+.logoSection > img {
+  height: 100%;
+  width: 100%;
+}
+
+.routesSection {
+  width: 100%;
+  margin: 4rem 0;
+  animation: appear 0.3s ease-in-out;
+}
+
+.route {
+  display: flex;
+  align-items: center;
+  padding: 10px 32px;
+  gap: 12px;
+  font-family: Quasimoda;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  color: #1c254e;
+  cursor: pointer;
+  position: relative;
+  /* border: 2px solid red; */
+  margin-top: 0.8rem;
+}
+
+.route > span:nth-child(1) {
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+}
+
+.active {
+  font-weight: 600;
+  color: #32428b;
+}
+
+.inActiveRoute {
+  cursor: not-allowed;
+  color: #adadad;
+  pointer-events: none;
+  user-select: none;
+}
+
+.otherOptions {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  user-select: none;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.innerRoute {
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  text-decoration: none;
+  /* color: #1c254e; */
+  padding: 10px 32px;
+  width: 100%;
+  display: block;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.innerRoute:not(.inActiveRoute) {
+  color: #1c254e;
+}

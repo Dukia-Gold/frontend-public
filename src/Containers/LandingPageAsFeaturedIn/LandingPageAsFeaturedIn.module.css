@@ -1,0 +1,149 @@
+.container {
+  padding: 5rem;
+  gap: 3rem;
+  background-color: #f3f4f6;
+}
+
+.containerCoins {
+  padding: 5rem;
+  gap: 3rem;
+  background-color: #f3f4f6;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header > hr {
+  border: 0.15rem solid rgb(212 164 24);
+  width: 3.5rem;
+  margin: 1rem 0;
+}
+
+.header > h4 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-family: Futura;
+  color: #1c254e;
+  text-align: center;
+}
+
+.newsBody {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: auto;
+  margin: 2.5rem auto 0 auto;
+  width: 100%;
+}
+
+.newsItem {
+  border-radius: 0.5rem;
+  width: 300px;
+  height: 20px;
+}
+
+.newsItem > .imageSection > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.textSection > h4 {
+  color: #fff;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin: 0.5rem 0;
+}
+
+.textSection > p {
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  font-family: Quasimoda;
+  color: rgb(156 163 175);
+}
+
+.textSection > button {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgb(30 66 159);
+  border: none;
+  color: #7a8bb2;
+  cursor: pointer;
+}
+
+.textSection > button > svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header > h4 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+
+  .header > hr {
+    margin: 0.5rem 0;
+  }
+
+  .textSection > h4 {
+    letter-spacing: 0.3px;
+    line-height: 24.6px;
+    font-size: 1.2rem;
+  }
+
+  .textSection > p {
+    line-height: 24px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 2rem 20px;
+  }
+
+  .newsItem > .imageSection {
+    height: 70px;
+    width: 100%;
+  }
+
+  .header > h4 {
+    letter-spacing: 0.7px;
+    line-height: 30.6px;
+    font-size: 1.5rem;
+  }
+
+  .header > hr {
+    margin: 0.5rem 0;
+  }
+
+  .textSection > h4 {
+    letter-spacing: 0.3px;
+    line-height: 24.6px;
+    font-size: 1.2rem;
+  }
+
+  .textSection > p {
+    line-height: 24px;
+    font-size: 1rem;
+  }
+}

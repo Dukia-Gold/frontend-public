@@ -1,0 +1,492 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5rem;
+  background-color: #10152d;
+  position: relative;
+  user-select: none;
+  height: 10vh;
+}
+
+.logoSection {
+  width: 75px;
+  height: 65px;
+  cursor: pointer;
+}
+
+.logoSection > img {
+  width: 100%;
+  height: 100%;
+}
+
+.headerRoutes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 400;
+  gap: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  width: 40%;
+}
+
+.searchAndLogin {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.searchAndLogin > div:nth-child(1) > svg:nth-child(1) {
+  color: #ffffff;
+  height: 25px;
+  width: 42px;
+  cursor: pointer;
+}
+
+.route,
+.routeInner {
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.cart,
+.mobileCart {
+  position: relative;
+  margin-left: auto;
+}
+
+.cartLengthIndicator {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -15px;
+  top: -15px;
+  border-radius: 50%;
+  background: #daaa38;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  text-decoration: none;
+}
+
+.cartDropdownContainer {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  animation: appear 0.3s ease-in-out;
+  z-index: 3;
+}
+
+.optionsPopup {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background: rgb(255 255 255);
+  position: absolute;
+  left: 0;
+  top: 140%;
+  width: 188px;
+  max-height: 308px;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  animation: appear 0.3s ease-in-out;
+}
+
+.optionsPopup > a {
+  display: block;
+  color: #1c254e;
+  font-weight: 700;
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0.75rem 0;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.sideNav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  overflow: hidden;
+  width: 0;
+  background-color: #10152d;
+  transition: 0.3s;
+}
+
+.sideNavInner {
+  padding: 10px 20px;
+}
+
+.sideNavInner > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.sideNavInner > .header > img {
+  width: 45px;
+  height: 35px;
+}
+
+.mobileCart {
+  width: 1.5rem;
+  height: 1.5rem;
+  /* margin-left: auto; */
+  color: #ffffff;
+}
+
+.sideNavInner > .header > button {
+  justify-self: flex-end;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.navBox > .route {
+  font-weight: 400;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.routeInner > p {
+  font-weight: 400;
+}
+
+.routeNew > .optionsPopupNew {
+  margin: 1rem 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.optionsPopupNew > a {
+  display: block;
+  color: #1c254e;
+  font-weight: 400;
+  font-family: Quasimoda, Helvetica, Arial, Lucida, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 0.5rem 0;
+  color: #ffffff;
+}
+
+.navBox > .route > .optionsPopup > a {
+  color: #ffffff;
+  padding: 0.5rem 0;
+}
+
+.buttonContainer {
+  margin-top: 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.profile > .cart {
+  color: #fff;
+}
+
+.profile > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile > div:nth-child(2) > p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+.sideMenuOpener {
+  display: none;
+}
+
+.profileDropdown {
+  border-radius: 0.5rem;
+  background: rgb(255 255 255);
+  position: absolute;
+  right: 0;
+  top: 120%;
+  width: 288px;
+  max-height: 338px;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  animation: appear 0.3s ease-in-out;
+  font-size: 1rem;
+  padding: 0.5rem;
+  z-index: 2;
+}
+
+.profileDropdown > div:first-child {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.profileDropdown > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: column;
+  font-family: Quasimoda;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.profileDropDownLink {
+  text-decoration: underline;
+}
+
+.profileDropdown > div > img {
+  width: 120px;
+  height: 120px;
+}
+
+.livePriceUpdate {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  padding: 0 4rem;
+
+  background: rgba(16, 21, 45, 0.8);
+  color: #fff;
+}
+
+.livePriceUpdate > div {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1rem;
+  font-size: 0.75rem;
+}
+
+.livePriceUpdate > div:nth-child(1) > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.livePriceUpdate
+  > div:nth-child(1)
+  > span:not(.livePriceUpdate > div > span:nth-child(2)),
+.livePriceUpdate
+  > div:nth-child(2)
+  > span:not(.livePriceUpdate > div > span:nth-child(1)) {
+  color: #daaa38;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+.livePriceDetail {
+  position: absolute;
+  width: 400px;
+  background: rgba(16, 21, 45, 0.8);
+  top: calc(10vh - 75px);
+  left: 0;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  border-radius: 5px;
+  color: #daaa38;
+  animation: appear 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 10px 20px;
+    height: 7vh;
+  }
+
+  .livePriceUpdate {
+    padding: 10px 10px;
+    flex-direction: column;
+    height: 60px;
+    bottom: -5vh;
+  }
+
+  .headerRoutes {
+    display: none;
+  }
+
+  .searchAndLogin {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hamburgerMenu > svg,
+  .hamburgerMenu > div > svg {
+    width: 1rem;
+    height: 1rem;
+    color: #ffffff;
+  }
+
+  .logoSection {
+    width: 45px;
+    height: 35px;
+  }
+
+  .cartDropdownContainer {
+    width: 100%;
+  }
+
+  .cartLengthIndicator {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    right: -10px;
+    top: -10px;
+  }
+
+  .loginCOunter {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 10px 20px;
+    height: 7vh;
+  }
+
+  .livePriceUpdate {
+    padding: 10px 10px;
+    flex-direction: column;
+    height: 60px;
+    bottom: -5.1vh;
+  }
+
+  .livePriceUpdate > div {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    line-height: 1rem;
+    font-size: 0.65rem;
+  }
+
+  .livePriceDetail {
+    width: 90vw;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    border-radius: 5px;
+    color: #daaa38;
+  }
+
+  .livePriceUpdate > div:nth-child(1) > div {
+    height: 16px;
+    width: 16px;
+    font-size: 0.5rem;
+  }
+
+  .headerRoutes {
+    display: none;
+  }
+
+  .searchAndLogin {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hamburgerMenu > svg,
+  .hamburgerMenu > div > svg {
+    width: 1rem;
+    height: 1rem;
+    color: #ffffff;
+  }
+
+  .logoSection {
+    width: 45px;
+    height: 35px;
+  }
+
+  .cartDropdownContainer {
+    width: 100%;
+    left: -75vw;
+  }
+
+  .cartLengthIndicator {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    right: -10px;
+    top: -10px;
+  }
+
+  .loginCOunter {
+    display: none;
+  }
+}
