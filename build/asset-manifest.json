@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6f210227.css",
+    "main.js": "/static/js/main.b1f4de26.js",
+    "static/js/787.d11b5bc9.chunk.js": "/static/js/787.d11b5bc9.chunk.js",
+    "static/media/Quasimoda Black.otf": "/static/media/Quasimoda Black.8c6de994807f4cb0fa72.otf",
+    "static/media/Quasimoda Bold.otf": "/static/media/Quasimoda Bold.b64bcaa5e9e68e56b71f.otf",
+    "static/media/Quasimoda SemiBold.otf": "/static/media/Quasimoda SemiBold.310b5be8399b26fe9b5a.otf",
+    "static/media/Quasimoda Regular.otf": "/static/media/Quasimoda Regular.5b63eeb922d79e885215.otf",
+    "static/media/Futura Bold.ttf": "/static/media/Futura Bold.bb156132a191d4d55aa3.ttf",
+    "index.html": "/index.html",
+    "main.6f210227.css.map": "/static/css/main.6f210227.css.map",
+    "main.b1f4de26.js.map": "/static/js/main.b1f4de26.js.map",
+    "787.d11b5bc9.chunk.js.map": "/static/js/787.d11b5bc9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f210227.css",
+    "static/js/main.b1f4de26.js"
+  ]
+}
